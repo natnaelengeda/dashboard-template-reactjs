@@ -6,6 +6,6 @@ export const Route = createFileRoute('/')({
 
 export default function Index() {
   return (
-    <div>Index</div>
+    <div className=''>Index</div>
   )
 }

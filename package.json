@@ -1,6 +1,10 @@
 {
   "name": "create-reactjs-a-dashboard",
   "version": "1.0.8",
+  "keywords": [
+    "Reactjs",
+    "Dashboard"
+  ],
   "bin": {
     "create-reactjs-a-dashboard": "./index.js"
   },

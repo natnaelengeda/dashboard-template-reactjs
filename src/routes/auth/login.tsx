@@ -1,10 +1,17 @@
+// Router
+import { createFileRoute } from '@tanstack/react-router'
+
+// Components
 import { LoginForm } from '@/components/login-form';
 import { BackgroundGradientAnimation } from '@/components/ui/background-gradient-animation';
-import Typography from '@/components/ui/typography';
-import { createFileRoute } from '@tanstack/react-router'
+
+
+
+// Config
+import constants from '@/config/constants';
+
+// Icons
 import { GalleryVerticalEnd } from 'lucide-react';
-
-
 
 export const Route = createFileRoute('/auth/login')({
   component: RouteComponent,
@@ -27,7 +34,7 @@ function RouteComponent() {
                 <div className="flex h-6 w-6 items-center justify-center rounded-md bg-primary text-primary-foreground">
                   <GalleryVerticalEnd className="size-4" />
                 </div>
-                React Dashboard.
+                {constants.name}
               </a>
             </div>
             <div className="flex flex-1 items-center justify-center">

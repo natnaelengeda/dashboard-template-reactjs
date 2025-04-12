@@ -31,6 +31,9 @@ import {
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
 
+// Config
+import constants from "@/config/constants"
+
 const data = {
   user: {
     name: "shadcn",
@@ -160,7 +163,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
             >
               <a href="#">
                 <IconInnerShadowTop className="!size-5" />
-                <span className="text-base font-semibold">Acme Inc.</span>
+                <span className="text-base font-semibold">{constants.name}</span>
               </a>
             </SidebarMenuButton>
           </SidebarMenuItem>

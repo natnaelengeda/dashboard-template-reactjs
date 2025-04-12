@@ -1,10 +1,10 @@
 {
   "name": "create-reactjs-a-dashboard",
-  "version": "1.0.0",
+  "version": "1.0.8",
   "bin": {
-    "create-reactjs-a-dashboard": "cli.js"
+    "create-reactjs-a-dashboard": "./index.js"
   },
-  "type": "commonjs",
+  "type": "module",
   "dependencies": {
     "download-git-repo": "^3.0.2",
     "execa": "^9.5.2",

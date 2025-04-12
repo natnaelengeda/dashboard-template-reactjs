@@ -10,25 +10,24 @@ const templateRepo =
 const targetDir = process.argv[2] || "." // Directory where to place the files
 
 if (!fs.existsSync(targetDir)) {
-  fs.mkdirSync(targetDir, { recursive: true });
+  fs.mkdirSync(targetDir, { recursive: true })
 }
 
-console.log(`Downloading template to ${targetDir}...`);
+console.log(`Downloading template to ${targetDir}...`)
 
-
-download(templateRepo, targetDir, { clone: true }, (err) => {
+download(templateRepo, targetDir, { clone: true }, err => {
   if (err) {
-    console.error('Error downloading template:', err);
-    process.exit(1);
+    console.error("Error downloading template:", err)
+    process.exit(1)
   }
 
-  console.log('Template downloaded!');
-  console.log('Now running npm install...');
-  execa('npm', ['install'], { cwd: targetDir })
+  console.log("Template downloaded!")
+  console.log("Now running npm install...")
+  execa("npm", ["install"], { cwd: targetDir })
     .then(() => {
-      console.log('npm install complete!');
+      console.log("npm install complete!")
     })
-    .catch((err) => {
-      console.error('Error running npm install:', err);
-    });
-});
+    .catch(err => {
+      console.error("Error running npm install:", err)
+    })
+})

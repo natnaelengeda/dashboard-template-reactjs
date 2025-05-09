@@ -14,6 +14,12 @@ A simple and elegant CLI tool to quickly scaffold a ready-to-go ReactJS dashboar
 
 ---
 
+## 📦 To Run
+
+```bash
+npm create reactjs-a-dashboard
+```
+
 ## 📦 Installation
 
 Use `npx` to run the CLI without installing it globally:

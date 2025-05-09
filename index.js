@@ -4,7 +4,7 @@ import { execSync } from "child_process"
 import fs from "fs"
 import path from "path"
 import readline from "readline"
-import chalk from "chalk"
+// import chalk from "chalk"
 import fsExtra from "fs-extra" // ✅ this line
 import https from "https"
 import { fileURLToPath } from "url"
@@ -60,7 +60,7 @@ function askQuestion(query) {
 async function main() {
   checkForUpdate()
 
-  console.log(chalk.blue("🚀 Welcome to Reactjs Dashboard CLI!"))
+  console.log("🚀 Welcome to Reactjs Dashboard CLI!")
 
   const projectName = await askQuestion("Enter your project name: ")
   const targetDir = path.resolve(process.cwd(), projectName.trim())
